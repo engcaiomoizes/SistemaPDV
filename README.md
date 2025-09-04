@@ -6,6 +6,7 @@ Este projeto é um sistema de Ponto de Venda (PDV) desenvolvido em **C#** com ba
 
 - ✅ Cadastro de produtos com controle de estoque
 - ✅ Cadastro de clientes e fornecedores
+- ✅ Cadastro de funcionários e usuários
 - ✅ Registro de vendas
 - ✅ Controle de caixa (abertura, movimentações e fechamento)
 - ✅ Autenticação de usuários
@@ -22,6 +23,8 @@ Este projeto é um sistema de Ponto de Venda (PDV) desenvolvido em **C#** com ba
 - Relatórios gerenciais (vendas, estoque, fluxo de caixa)
 - Níveis de acesso
 - Backup automático do banco de dados
+- Opção com outro banco de dados relacional (MySQL/PostgreSQL)
+- Geração de instalador com Inno Setup
 
 ## Como executar o projeto
 
@@ -31,10 +34,12 @@ Este projeto é um sistema de Ponto de Venda (PDV) desenvolvido em **C#** com ba
    ```
 
 2. Configure o banco de dados Firebird
-   - Instale o Firebird (versão recomendada: 3.0 ou superior)
+   - Instale o Firebird (versão recomendada: 2.5.9)
+   - O arquivo `PDV.FDB` encontra-se dentro da pasta `Banco/` do projeto
 
 3. Abra o projeto no Visual Studio
    - Configure a string de conexão no arquivo `Conexao.cs`
+   - Compile a solução
 
 4. Execute o sistema
    - Faça login com o usuário padrão:
